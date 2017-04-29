@@ -1,0 +1,38 @@
+div.contentsBox {
+  float: left;
+   margin: 0px;  padding: 0px; width: 20%;
+}
+
+/* タブ部分 */
+p.contentsTabs { margin: 0px; padding: 0px; }
+p.contentsTabs a {
+   display: block; width: 5em; float: left;
+   margin: 0px 1px 0px 0px; padding: 3px;
+   text-align: center;
+   border-radius: 12px 12px 0px 0px; /* 角を丸くする */
+}
+p.contentsTabs a.contentsTab1 { background-color: blue; color: white; }
+p.contentsTabs a.contentsTab2 { background-color: #aaaa00; color:white;}
+p.contentsTabs a.contentsTab3 { background-color: red; color: white; }
+p.contentsTabs a:hover { color: yellow; }
+
+/* タブ中身のボックス */
+div.contentsTab { height: 60%; overflow: auto; clear: left; }
+div#contentsTab1 {
+   border: 2px solid #ffcfff;
+}
+div#contentsTab2 {
+   border: 2px solid #aaaa00; background-color: #ffffcc;
+}
+div#contentsTab3 {
+   border: 2px solid red; background-color: #ffcccc;
+}
+div.contentsTab p { margin: 0.5em; }
+
+div.contentsTab_child{
+    width:auto;;
+    height:25%;
+    border: 2px solid #ffcfff	;
+    background: #ffe8f8;
+    text-align: center;
+}

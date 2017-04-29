@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel='stylesheet' type='text/css' href='./css/menu.css'>
+<link rel='stylesheet' type='text/css' href='./css/chat.css'>
+<link rel='stylesheet' type='text/css' href='./css/map.css'>
+<link rel='stylesheet' type='text/css' href='./css/contents.css'>
+</HEAD>
+<BODY>
+
+  <div class="menu">
+    <ul id="dropmenu">
+      <li><a href="#">ファイル</a>
+        <ul>
+          <li><a href="#">ログ保存</a></li>
+          <li><a href="#">途中経過セーブ</a></li>
+          <li><a href="#">ファイル操作系1</a></li>
+          <li><a href="#">ファイル操作系1</a></li>
+        </ul>
+      </li>
+      <li><a href="#">キャラ</a>
+        <ul>
+          <li><a href="#">配置</a></li>
+          <li><a href="#">新規作成</a></li>
+          <li><a href="#">キャラクター操作系1</a></li>
+          <li><a href="#">ユカリサンカワイイヤッター</a></li>
+        </ul>
+      </li>
+      <li><a href="#">画像</a>
+        <ul>
+          <li><a href="#">アップロード</a></li>
+          <li><a href="#">参照</a></li>
+          <li><a href="#">画像操作系1</a></li>
+          <li><a href="#">画像操作系2</a></li>
+        </ul>
+      </li>
+      <li><a href="#">増設予定</a>
+        <ul>
+          <li><a href="#">ここをふやして</a></li>
+          <li><a href="#">いろいろな意見を取り込める予定</a></li>
+          <li><a href="#">うまくいくかは</a></li>
+          <li><a href="#">神のみそしる</a></li>
+        </ul>
+      </li>
+    </ul>
+      <button class="logout">退室</button>
+  </div>
+
+  <!-- マップボックス -->
+  <div class="mapBox">
+     <p class="mapTabs">
+        <a href="#mapTab1" class="mapTab1" onclick="ChangemapTab('mapTab1'); return false;">MAP1</a>
+        <a href="#mapTab2" class="mapTab2" onclick="ChangemapTab('mapTab2'); return false;">MAP2</a>
+        <a href="#mapTab3" class="mapTab3" onclick="ChangemapTab('mapTab3'); return false;">MAP3</a>
+     </p>
+     <div id="mapTab1" class="mapTab">
+        <table class="mapTable" border="1">
+          <thead></thead>
+          <tbody>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+     </div>
+     <div id="mapTab2" class="mapTab" style="display:none">
+       <table class="mapTable" border="1">
+         <thead></thead>
+         <tbody>
+           <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+           <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+           <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+           <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+           <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+           <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+           <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+         </tbody>
+       </table>
+     </div>
+     <div id="mapTab3" class="mapTab" style="display:none">
+        <p>(タブ3の中身。いくつでも増やせます。)</p>
+     </div>
+  </div>
+
+    <!-- ユーザー -->
+    <div class="contentsBox">
+       <p class="contentsTabs">
+          <a href="#contentsTab1" class="contentsTab1" onclick="ChangecontentsTab('contentsTab1'); return false;">PL</a>
+          <a href="#contentsTab2" class="contentsTab2" onclick="ChangecontentsTab('contentsTab2'); return false;">ダイス</a>
+          <a href="#contentsTab3" class="contentsTab3" onclick="ChangecontentsTab('contentsTab3'); return false;">共有メモ</a>
+       </p>
+       <div id="contentsTab1" class="contentsTab">
+          <div class="contentsTab_child">
+            <span class="center">
+              生成
+            </span>
+          </div>
+          <div class="contentsTab_child">画像
+            <input type="file"></input>
+
+            <button>あっぷろーど</button>
+          </div>
+          <div class="contentsTab_child">色
+            <select name="example">
+              <option value="">色</option>
+              <option value="red">赤とか</option>
+              <option value="blue">青とか</option>
+            </select>
+          </div>
+          <div class="contentsTab_child">形状
+            <select name="example">
+              <option value="">形状</option>
+              <option value="red">赤とか</option>
+              <option value="blue">青とか</option>
+            </select>
+          </div>
+       </div>
+       <div id="contentsTab2" class="contentsTab" style="display:none">
+          <p>(タブ2の中身。HTMLタグも記述可能です。)</p>
+       </div>
+       <div id="contentsTab3" class="contentsTab" style="display:none">
+          <p>(タブ3の中身。いくつでも増やせます。)</p>
+       </div>
+    </div>
+
+  <!-- チャットボックス -->
+  <div class="chatBox">
+     <p class="chatTabs">
+        <span class="chatTab_utility">-　□　×</span>
+        <a href="#chatTab1" class="chatTab1" onclick="ChangechatTab('chatTab1'); return false;">メイン</a>
+        <a href="#chatTab2" class="chatTab2" onclick="ChangechatTab('chatTab2'); return false;">PL1</a>
+        <a href="#chatTab3" class="chatTab3" onclick="ChangechatTab('chatTab3'); return false;">PL2</a>
+        <a href="#chatTab3" class="chatTab_add" onclick="ChangechatTab('chatTab3'); return false;">＋</a>
+     </p>
+     <div id="chatTab1" class="chatTab">
+       <div class="log">
+        <p>testUser: あいうえお</p>
+        <p>testUser: あいうえお</p>
+        <p>testUser: あいうえお</p>
+        <p>testUser: あいうえお</p>
+        <p>testUser: あいうえお</p>
+      </div>
+        <div class="message_utility">
+          <button>文字の大きさ変えたり</button>
+          <button>色を変えたり</button>
+          <button>そんな</button>
+          <button>テキスト編集系</button>
+          <button>ボタン集</button>
+        </div>
+        <div class="message">
+          <textarea>※このチャットはハリボテです</textarea>
+          <button>送信</button>
+        </div>
+     </div>
+     <div id="chatTab2" class="chatTab" style="display:none">
+        <p>(タブ2の中身。HTMLタグも記述可能です。)</p>
+     </div>
+     <div id="chatTab3" class="chatTab" style="display:none">
+        <p>(タブ3の中身。いくつでも増やせます。)</p>
+     </div>
+  </div>
+
+</BODY>
+
+
+</HTML>

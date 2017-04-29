@@ -1,0 +1,39 @@
+div.mapBox {
+   float: left;
+   margin-right: 10px;  padding: 0px; width: 75%;
+}
+
+/* タブ部分 */
+p.mapTabs { margin: 0px; padding: 0px; }
+p.mapTabs a {
+   display: block; width: 5em; float: left;
+   margin: 0px 1px 0px 0px; padding: 3px;
+   text-align: center;
+   border-radius: 12px 12px 0px 0px; /* 角を丸くする */
+}
+p.mapTabs a.mapTab1 { background-color: blue; color: white; }
+p.mapTabs a.mapTab2 { background-color: #aaaa00; color:white;}
+p.mapTabs a.mapTab3 { background-color: red; color: white; }
+p.mapTabs a:hover { color: yellow; }
+
+/* タブ中身のボックス */
+div.mapTab { height: 60%; overflow: auto; clear: left; }
+div#mapTab1 {
+   border: 2px solid black;
+   background-image: url("../img/catan.png")
+}
+div#mapTab2 {
+   border: 2px solid black;
+   background-image: url("../img/pman.jpg")
+}
+div#mapTab3 {
+   border: 2px solid black; background-color: #ffcccc;
+}
+div.mapTab p { margin: 0.5em; }
+
+table.mapTable {
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+   height:100%;
+}

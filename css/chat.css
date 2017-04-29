@@ -1,0 +1,59 @@
+div.chatBox {
+   clear: clear;
+   margin-right: 10px; padding: 0px; width: 100%;
+}
+
+/* タブ部分 */
+p.chatTabs { margin: 0px; padding: 0px; }
+p.chatTabs a {
+   display: block; width: 5em; float: left;
+   margin: 0px 1px 0px 0px; padding: 3px;
+   text-align: center;
+   border-radius: 12px 12px 0px 0px; /* 角を丸くする */
+}
+p.chatTabs span {
+   display: block; width: 5em; float: left;
+   margin: 0px 1px 0px 0px; padding: 3px;
+   text-align: center;
+   border-radius: 12px 12px 0px 0px; /* 角を丸くする */
+}
+p.chatTabs a.chatTab1 { background-color: blue; color: white; }
+p.chatTabs a.chatTab2 { background-color: #aaaa00; color:white;}
+p.chatTabs a.chatTab3 { background-color: red; color: white; }
+
+p.chatTabs .chatTab_add {
+   display: block; width: 3em; float: left;
+   margin: 0px 1px 0px 0px; padding: 3px;
+   text-align: center;
+   border-radius: 12px 12px 0px 0px; /* 角を丸くする */
+}
+p.chatTabs a.chatTab_add { background-color: green; color: white; }
+
+p.chatTabs span.chatTab_utility{ background-color: red; color: white; }
+p.chatTabs a:hover { color: yellow; }
+
+/* タブ中身のボックス */
+div.chatTab { height: 28%; overflow: auto; clear: left; }
+div#chatTab1 {
+   border: 2px solid black;
+   background-color: white;
+   border-radius: 0.4em;
+}
+div#chatTab2 {
+   border: 2px solid black; background-color: #ffffcc;
+}
+div#chatTab3 {
+   border: 2px solid black; background-color: #ffcccc;
+}
+div.chatTab p { margin: 0.5em; }
+
+div.log {
+  height: 50%;
+  overflow: scroll;
+  border-style: outset;
+}
+
+div.message textarea {
+  margin-top: 10px;
+  width: 80%;
+}
